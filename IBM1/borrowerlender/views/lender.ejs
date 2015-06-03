@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Lender Profile</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="css/stylesheets/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container"  align="center">
+                <h1 style="text-align:center">Welcome lender</h1>
+                <form class="form" action="lender_post" method="post" style="align:center;left:200px" >
+                    <div class="Personal Details">
+                        <table >
+                        <tr>
+                            <td>
+                                <h2>Personal Details</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>                
+                                Name
+                            </td>
+                            <td>
+                                <div class="name">                    
+                                    <input style="width:250px" type="text" name="firstname" placeholder="First Name">
+                                    <input style="width:250px" type="text" name="lastname" placeholder="Last Name">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Photo 
+                            </td>
+                            <td>
+                                <input style="width:475px" type="file" name = "file" size="50">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>    
+                                Gender
+                            </td>
+                            <td>
+                                <div class="gender">                     
+                                    Male<input type="radio" name="gender" value="male"> 
+                                    Female<input type="radio" name="gender" value="female"> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Marital Status
+                            </td>
+                            <td>
+                                <div class="marital_status">
+                                    Single<input type="radio" name="marital_status" value="Single">
+                                    Married<input type="radio" name="marital_status" value="Single">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>    
+                                Date of Birth
+                            </td>
+                            <td>
+                                <div class="dob">
+                                    <input style="width:250px" type="date" name="day" placeholder="mm/dd/yyyy">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Address
+                            </td>
+                            <td>
+                                <div class="address">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <input type="text" style="width:250px" name="Street1" placeholder="Street 1">
+                                            </td>
+                                            <td>    
+                                                <input type="text" style="width:250px"  name="Street2" placeholder="Street 2">    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>    
+                                                <input type="text" style="width:250px" name="City" placeholder="City"> 
+                                            </td>
+                                            <td>    
+                                                <input type="text" style="width:250px" name="State" placeholder="State">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>    
+                                                <input type="text" style="width:250px" name="Pincode" placeholder="Pincode">
+                                            </td>
+                                            <td>    
+                                                <input type="text" style="width:250px" name="Emailid" placeholder="Email ID">
+                                            </td>
+                                        <tr>
+                                            <td>                
+                                                <input type="text" style="width:250px" name="phone" placeholder="Telephone No">
+                                            </td>
+                                            <td>
+                                                <input type="text" style="width:250px" name="Emailid" placeholder="Mobile No">
+                                            </td>
+                                        </tr>
+                                    </table>    
+                                </div>
+                            </td>
+                        </tr>
+                        </table>    
+                    </div>
+                    <div class="Other Details">
+                        <table>
+                            <tr>
+                            <td>
+                        <h2>Other Details</h2>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                        PAN Account No.
+                            </td>
+                            <td><input type="text" style="width:250px" name="PAN" placeholder="PAN No.">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        Proof of Indentity
+                        </td>
+                        <td><input type="file" style="width:410px" name="ID" placeholder="Proof of Identity">
+                        </td>
+                        </tr>
+                        </table> 
+                    </div>
+                    <button align="center"type="submit" id="login-button">Login</button>
+                </form>
+            </div>
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </body>
+</html>
+
