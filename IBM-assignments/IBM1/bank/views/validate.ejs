@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login Box HTML Code - www.PSDGraphics.com</title>
+
+<link href="login-box.css" rel="stylesheet" type="text/css" />
+<style>
+	#table1 {
+	width:500px;
+	height: 500px;
+	padding: 58px 76px 0 76px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(images/login-box-backg.png) no-repeat left top ;
+	background-size: 500px 500px;
+	position: relative;
+	display : inline-block;
+}
+
+	#table2 {
+	width:500px;
+	height: 500px;
+	padding: 58px 76px 0px 76px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(images/login-box-backg.png) no-repeat left top ;
+	background-size: 500px 500px;
+	position: relative;
+	display : inline-block;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+<table align="center">
+	<tr>
+		<td>
+<div id="table1">
+
+<H2>Lender profile</H2>
+
+<h3><%=lender.firstname %>  <%=lender.lastname %></h3>
+<h3>Gender : <%=lender.gender %></h3>
+<h3>Marital Status : <%= lender.marital_status %></h3>
+<h3>Date of birth : <%= lender.day %></h3>
+<h3>Addres : <%= lender.Street1 %>, <%= lender.Street2 %>, <%= lender.City %><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= lender.State %>, <%= lender.Pincode %></h3>
+<h3>Email Id : <%= lender.Emailid %></h3>
+<% if (lender.mobile){ %>
+<h3>Mobile no : <%= lender.mobile %></h3>
+<% } %>
+<h3>Phone : <%= lender.phone %></h3>
+<h3>PAN : <%= lender.PAN %></h3>
+
+</div>
+		</td>
+		<td>
+		</td>
+		<td>	
+
+<div id="table2">
+
+<H2>Borrower profile</H2>
+<h3><%=borrower.firstname %>  <%=borrower.lastname %></h3>
+<h3>Gender : <%=borrower.gender %></h3>
+<h3>Marital Status : <%= borrower.marital_status %></h3>
+<h3>Date of birth : <%= borrower.day %></h3>
+<h3>Addres : <%= borrower.Street1 %>, <%= borrower.Street2 %>, <%= borrower.City %><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= borrower.State %>, <%= borrower.Pincode %></h3>
+<h3>Email Id : <%= borrower.Emailid %></h3>
+<% if (borrower.mobile){ %>
+<h3>Mobile no : <%= borrower.mobile %></h3>
+<% } %>
+<h3>Phone : <%= borrower.phone %></h3>
+<h3>PAN : <%= borrower.PAN %></h3>
+
+</div>
+		</td>
+	</tr>
+<tr>
+<td>
+</td>
+<td><button type="button" onclick="alert('Thank You!')" align="center">Validate</button>
+</td>
+<td>
+</td>
+</tr>	
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
